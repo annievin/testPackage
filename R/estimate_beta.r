@@ -7,8 +7,9 @@
 #' @export
 #'
 #' @examples
-#' myfunc(3, 5)
+#' estimate_beta(3, 5)
 estimate_beta <- function(y, X) {
   beta_hat <- solve(t(X) %*% X) %*% t(X) %*% y
   return(beta_hat)
 }
+
